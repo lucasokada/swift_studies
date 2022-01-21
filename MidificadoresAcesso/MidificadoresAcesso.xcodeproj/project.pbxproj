@@ -1,0 +1,121 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		3D5D82282642373600D52E01 /* classA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classA.swift; sourceTree = "<group>"; };
+		3D5D822A264237BA00D52E01 /* classB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classB.swift; sourceTree = "<group>"; };
+		3D5D822D264238D900D52E01 /* classC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classC.swift; sourceTree = "<group>"; };
+		3D5D822F26423A7B00D52E01 /* classD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classD.swift; sourceTree = "<group>"; };
+		3D5D823126423F4300D52E01 /* classE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classE.swift; sourceTree = "<group>"; };
+		3D5D823226423FE300D52E01 /* classF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classF.swift; sourceTree = "<group>"; };
+		3D5D82342642412A00D52E01 /* classG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classG.swift; sourceTree = "<group>"; };
+		3D5D82352642431F00D52E01 /* classH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classH.swift; sourceTree = "<group>"; };
+		3D63B34C264346AC00141F3E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3D5D82212642370500D52E01 = {
+			isa = PBXGroup;
+			children = (
+				3D63B34C264346AC00141F3E /* Main.swift */,
+				3D5D82332642411600D52E01 /* packageD */,
+				3D5D823026423EAA00D52E01 /* packageC */,
+				3D5D822C264238B000D52E01 /* packageB */,
+				3D5D82292642379C00D52E01 /* packageA */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5D82292642379C00D52E01 /* packageA */ = {
+			isa = PBXGroup;
+			children = (
+				3D5D82282642373600D52E01 /* classA.swift */,
+				3D5D822A264237BA00D52E01 /* classB.swift */,
+			);
+			path = packageA;
+			sourceTree = "<group>";
+		};
+		3D5D822C264238B000D52E01 /* packageB */ = {
+			isa = PBXGroup;
+			children = (
+				3D5D822D264238D900D52E01 /* classC.swift */,
+				3D5D822F26423A7B00D52E01 /* classD.swift */,
+			);
+			path = packageB;
+			sourceTree = "<group>";
+		};
+		3D5D823026423EAA00D52E01 /* packageC */ = {
+			isa = PBXGroup;
+			children = (
+				3D5D823126423F4300D52E01 /* classE.swift */,
+				3D5D823226423FE300D52E01 /* classF.swift */,
+			);
+			path = packageC;
+			sourceTree = "<group>";
+		};
+		3D5D82332642411600D52E01 /* packageD */ = {
+			isa = PBXGroup;
+			children = (
+				3D5D82342642412A00D52E01 /* classG.swift */,
+				3D5D82352642431F00D52E01 /* classH.swift */,
+			);
+			path = packageD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		3D5D82222642370500D52E01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = 3D5D82252642370500D52E01 /* Build configuration list for PBXProject "MidificadoresAcesso" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D5D82212642370500D52E01;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		3D5D82262642370500D52E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3D5D82272642370500D52E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D5D82252642370500D52E01 /* Build configuration list for PBXProject "MidificadoresAcesso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5D82262642370500D52E01 /* Debug */,
+				3D5D82272642370500D52E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D5D82222642370500D52E01 /* Project object */;
+}

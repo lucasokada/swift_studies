@@ -1,0 +1,86 @@
+-REFERENCE AND VALUE TYPES:
+
+
+	In swift we have two types of data, the "Value Types" and the "Reference Types".
+	The value types, each instance keeps a copy of this its data, defined as a struct, enum or tuple. The reference types, where different instances share a unique value. It's usually defined by a class.
+	So, the difference between these types basically is that, value types creates a independent instance of the data, that is, different variables points to different memory address, so because of that, any modification done don't impact in the others variables. In the reference types the variables points to the same memory address, so the modifications will impact in the others variables.
+
+	The both types have their advantages. The value types are safer than the reference types, because we have the guarantee that any other variable value will be modified in the project, and that simplyfies the reason.
+
+-MVVM(Model-View-ViewModel):
+	a "code organing" architectural design paradigm. Works in concert with the concept of reactuve user-interfaces. Must be adhered to for SwiftUI to work.
+It's different from MVC(Model View Controller) that UIKit uses
+
+			    Data Flow
+Model: ----------------------------------------------------> View:
+encapsulate the Data and the Logic			Reflects the model
+UI independent(don't import the SwiftUI)		Declared: We will just 	
+						declare the view. The change in		the view will happens only when						 		     			  	                          		  							
+						 the model changes
+
+
+	Therefore, this is a declarative paradigm programming. If we look for the code, the functions don't have the goal to put the views in their places. We just create the views were we wanted and the functions are only modifiers, to change the appearance and things like that. The code just declare the appearance of the UI.
+	In other hand, the imperative programming can be associated to a emperor, where the emperor gives the orders. For a Ui interface the imperative programming isn't good. The main reason about that is TIME. This functions will be called along the time, so that result un many function calls, that make the program slow. 
+
+The view react to the model changes, so it's reactive programming 
+
+
+
+	notice changes 		
+Model ----------------> View Model ----------------> View
+
+When the datas, present in the model, changes, the View-Model will interpret this changes, and will publish the changes. One important thing is that the View_Model don't have a direct communication to the view. When the view-model publish the things that change, the View subscribes that publication and asks to the View-Model: "What's the current state of the world? I'll draw myself to corresponde trate world state".
+
+When some iteration between the view and the user happens and the model must be changed because of that, the View-Model calls the "Intent function"(intenção do usuário) and after that modified the model state 
+
+	  modifies the model 		call the intent function(intenção do usuário)
+Model <----------------------View Model <-------------------------- View
+
+-Varieties of types:
+Struct
+Class
+Protocol
+Generics 
+Enum
+Functions
+
+Callers of the function: _, by
+_ means no label. That indicates the label isn't necessary, so, will not be used.
+By, is called external name 
+
+---------------------------------------------------------------------------
+
+Struct vs Class
+
+	struct is a value type and class is a reference type
+			heap				pointers
+
+	struct a = struct b -> a receive a copy of b
+	class a = class b -> a points to the same reference to b
+
+	struct -> functional programming -> No inheritance 
+	class -> object-oriented programming -> single inheritance 
+	
+
+	struct init -> initializes all vars
+	class init -> initializes no vars
+
+	struct -> mutability must be explicitly	stated 
+	class -> always mutable 
+
+	The View Model in MVVm is always a class, the everything else is a struct, except the views, that are protocols. 
+	The View Model is a class, cause it need to be shared, by the fact that it have a connection with the model.
+
+Generics;
+	There are situations that the variable type don't matters. The swift is a typed language, so we need a type to determine that. Because of that, we use the "don't care type", called generics 
+
+Functions Types:
+	we can declare a function of type "function"	
+	example:
+	(Int, Int) -> Bool // takes two Ints and returns a Bool 
+	(Double) -> Void // takes a Double and return nothing 
+	() -> Array<String> //takes no arguments and returns a array of strings 
+	() -> Void
+
+Closures (Fechamentos);
+	Basically is taking a function that is passed to other function as a parameter, and make the inlining instead of declare separately in other places.
